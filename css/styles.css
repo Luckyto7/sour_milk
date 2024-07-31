@@ -141,55 +141,52 @@ nav {
     }
 }
 
-/* Адаптивные стили */
-@media (max-width: 767px) {
+/* Мобильная версия */
+@media (max-width: 768px) {
     nav {
-        padding: 0 15px;
+        padding: 0 20px;
+    }
+    
+    .menu-toggle {
+        display: block;
     }
 
     .menu {
         display: none;
         flex-direction: column;
-        align-items: flex-start;
         position: absolute;
-        background-color: #fff;
-        top: 50px;
-        left: 0;
+        top: 100%;
         right: 0;
-        padding: 10px 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        width: 200px;
+        border-radius: 5px;
     }
 
     .menu.active {
         display: flex;
     }
 
-    .menu-toggle {
-        display: flex;
-    }
-
-    .intro {
-        flex-direction: column;
+    .menu li {
+        margin: 10px 40px;
         text-align: center;
-        padding-top: 60px;
     }
 
-    .intro-text {
-        max-width: 90%;
-    }
 
-    .intro-text h1 {
-        font-size: 28px;
+.intro-image {
+    max-width: 0;
+    max-height: 0px;
+    
     }
-
-    .intro-text p {
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-
-    .intro-image img {
-        max-width: 80%;
-        margin-top: 20px;
-    }
+.intro {
+    
+    padding: 50px 20px;
+    flex-direction: column;
+        text-align: center;
+}
+.into-text { 
+    margin-block: 10px 20px;
+writing-mode: horizontal-tb;
+    position: relative;
+}
 }
